@@ -6,7 +6,7 @@ scotchApp.config(function ($routeProvider) {
 
       // route for the home page
       .when('/', {
-        templateUrl: 'Views/Home.html',
+        templateUrl: 'Views/LandingPage.html',
         controller: 'landingPageController'
       })
 
@@ -32,7 +32,7 @@ scotchApp.config(function ($routeProvider) {
 // create the controller and inject Angular's $scope
 scotchApp.controller('landingPageController', function ($rootScope, $scope) {
   $scope.message = 'Welcome to the landing Page!';
-  $rootScope.header = "HomePage";
+  $rootScope.header = "LandingPage";
 });
 
 scotchApp.controller('mainController', function ($rootScope,$scope) {
